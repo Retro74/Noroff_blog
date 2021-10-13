@@ -5,8 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact page</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous" defer></script>
+    <script src="js/contact.js" defer></script>
+    
 </head>
 <body>
-    
+    <nav class="navbar bg-dark navbar-expand-lg navbar-dark mb-4">
+        <div class="container-fluid">
+            <a href="#blog" class="navbar-brand">Fundamental Blog</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <section class="rounded-3 shadow">
+            <div class="card-body">
+                <head class="mb-4">
+                    <h2 class="card-title">Send us a message</h2>
+                    <h6 class="card-subtitle">Fill out the form</h6>
+                </head>
+                <form action="" id="form_contact">
+                    <p>Do you have any questions or suggestions? Please fill in the form below.</p>
+                    <fieldset class="mb-2">
+                        <label for="name" class="form-label">Name *</label>
+                        <section class="input-group">
+                            <span class="input-group-text">
+                                <i class="material-icons">person</i>
+                            </span>
+                            <input type="text" placeholder="John Doe" id="name" name="name" class="form-control">
+                        </section>
+                    </fieldset>
+
+                    <fieldset class="mb-2">
+                        <label for="email" class="form-label">Email *</label>
+                        <section class="input-group">
+                            <span class="input-group-text">
+                                <i class="material-icons">mail</i>
+                            </span>
+                            <input type="email" placeholder="john.doe@email.com" id="email" name="email" class="form-control">
+                        </section>
+                        
+                    </fieldset>
+
+                    <fieldset class="mb-2">
+                        <label for="message" class="form-label">Message *</label>
+                        <textarea name="message" id="message"
+                            class="form-control"
+                            rows="10"
+                            placeholder="Enter your message here..."></textarea>
+                    </fieldset>
+
+                    <button class="btn btn-primary d-flex align-items-center">
+                        <span class="material-icons">send</span>&nbsp;
+                        <b>SEND</b>
+                    </button>
+                </form>
+                <br>
+                <div id="div_formResult"></div>
+            </div>
+        </section>
+    </div>
+
 </body>
 </html>
