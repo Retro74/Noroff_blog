@@ -28,7 +28,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous" defer></script>
-    <script src="js/contact.js" defer></script>
+    
+    <!-- type="module" Betyr at du kan importere andre jsfiler i denne jsfilen -->
+    <script type="module" src="js/index.js" defer></script>
     
 </head>
 <body>
@@ -52,254 +54,24 @@
         </div>
     </nav>
     <div class="container">
- <!-- Satt inn innhold her -->
- <!-- Rad for hovedoppslagt-->
- <div class="row mb-4">
-    <div class="col-8">
-        <img src="img/pexels-joyston-judah-933054.jpg" class="img-fluid rounded-3 shadow" />
-    </div>
-    <div class="col-4">
-        <section id="top-post" class="p-4">
-            <b class="text-muted d-block mb-4">20 MAR 2021</b>
-            <h2 class="mb-1">Essential things to take on your next holiday</h2>
-            <h4 class="text-muted mb-4">Travel the world</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et porro minus laudantium magnam molestias nam nostrum excepturi?</p>
-
-            <p class="text-muted d-flex align-items-center">
-                <span class="material-icons">person</span>
-                Written by Outdoors John
-            </p>
-
-            <footer>
-                <span class="badge bg-primary">#travel</span>
-                <span class="badge bg-primary">#holiday</span>
-                <span class="badge bg-primary">#nature</span>
-            </footer>
-        </section>
-    </div>
-</div>
-
- <!-- Postser -->
-<div id="posts" class="posts">
-     <!-- 1. Rad med posts-->
-    <div class="row">
-         <!-- 1. colonne for en post-->
-        <div class="col">
-            <section class="card shadow">
-                <img class="card-img-top" src="img/pexels-pixabay-357743.jpg" alt="" />
-                <div class="card-body">
-                    <b class="text-muted d-block mb-4">20 MAR 2021</b>
-                    <h2 class="mb-1">Spice up your meals with these spice combos</h2>
-                    <h4 class="text-muted mb-4">Spice life hacks</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-                    <p class="text-muted d-flex align-items-center">
-                        <span class="material-icons">person</span>
-                        Written by Spicy John
-                    </p>
-
-                    <footer>
-                        <span class="badge bg-primary">#travel</span>
-                        <span class="badge bg-primary">#holiday</span>
-                        <span class="badge bg-primary">#nature</span>
-                    </footer>
-                </div>
-            </section>
-        </div>
-        <!-- 2. colonne for en post-->
-        <div class="col">
-            <section class="card shadow">
-                <img class="card-img-top" src="img/pexels-s-migaj-747964.jpg" alt="" />
-                <div class="card-body">
-                    <b class="text-muted d-block mb-4">20 MAR 2021</b>
-                    <h2 class="mb-1">Meditate your way to relaxation</h2>
-                    <h4 class="text-muted mb-4">You wont believe what happened next</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-                    <p class="text-muted d-flex align-items-center">
-                        <span class="material-icons">person</span>
-                        Written by Calm John
-                    </p>
-
-                    <footer>
-                        <span class="badge bg-primary">#travel</span>
-                        <span class="badge bg-primary">#holiday</span>
-                        <span class="badge bg-primary">#nature</span>
-                    </footer>
-                </div>
-            </section>
-        </div>
-        <!-- 3. colonne for en post-->
-        <div class="col">
-            <section class="card shadow">
-                <img class="card-img-top" src="img/pexels-andrea-piacquadio-3766227.jpg" alt="" />
-                <div class="card-body">
-                    <b class="text-muted d-block mb-4">20 MAR 2021</b>
-                    <h2 class="mb-1">Working remotely has caused this to happen</h2>
-                    <h4 class="text-muted mb-4">Coffee shops said this</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-                    <p class="text-muted d-flex align-items-center">
-                        <span class="material-icons">person</span>
-                        Written by Distant John
-                    </p>
-
-                    <footer>
-                        <span class="badge bg-primary">#travel</span>
-                        <span class="badge bg-primary">#holiday</span>
-                        <span class="badge bg-primary">#nature</span>
-                    </footer>
-                </div>
-            </section>
-        </div>
-    </div>
-    <!-- 2. Rad med posts-->
-    <div class="row">
-        <!-- 1. colonne for en post-->
-        <div class="col">
-            <section class="card shadow">
-                <img class="card-img-top" src="img/pexels-fauxels-3183197.jpg" alt="" />
-                <div class="card-body">
-                    <b class="text-muted d-block mb-4">20 MAR 2021</b>
-                    <h2 class="mb-1">How COVID changed meetings in business</h2>
-                    <h4 class="text-muted mb-4">Shaking it up</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-                    <p class="text-muted d-flex align-items-center">
-                        <span class="material-icons">person</span>
-                        Written by Quarantine John
-                    </p>
-
-                    <footer>
-                        <span class="badge bg-primary">#travel</span>
-                        <span class="badge bg-primary">#holiday</span>
-                        <span class="badge bg-primary">#nature</span>
-                    </footer>
-                </div>
-            </section>
-        </div>
-        <!-- 2. colonne for en post-->
-        <div class="col">
-            <section class="card shadow">
-                <img class="card-img-top" src="img/pexels-rodnae-productions-7188095.jpg" alt="" />
-                <div class="card-body">
-                    <b class="text-muted d-block mb-4">20 MAR 2021</b>
-                    <h2 class="mb-1">This completely changed football</h2>
-                    <h4 class="text-muted mb-4">Hidden in plain sight</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-                    <p class="text-muted d-flex align-items-center">
-                        <span class="material-icons">person</span>
-                        Written by Sporty John
-                    </p>
-
-                    <footer>
-                        <span class="badge bg-primary">#travel</span>
-                        <span class="badge bg-primary">#holiday</span>
-                        <span class="badge bg-primary">#nature</span>
-                    </footer>
-                </div>
-            </section>
-        </div>
-        <!-- 3. colonne for en post-->
-        <div class="col">
-            <section class="card shadow">
-                <img class="card-img-top" src="img/pexels-dana-tentis-691114.jpg" alt="" />
-                <div class="card-body">
-                    <b class="text-muted d-block mb-4">20 MAR 2021</b>
-                    <h2 class="mb-1">Perfect Breakfast for the family</h2>
-                    <h4 class="text-muted mb-4">Tomato and Basil</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-                    <p class="text-muted d-flex align-items-center">
-                        <span class="material-icons">person</span>
-                        Written by Spicy John
-                    </p>
-
-                    <footer>
-                        <span class="badge bg-primary">#food</span>
-                        <span class="badge bg-primary">#cooking</span>
-                        <span class="badge bg-primary">#health</span>
-                    </footer>
-                </div>
-            </section>
-        </div>
-    </div>
-    <!-- 3. Rad med posts-->
-    <div class="row">
-        <!-- 1. colonne for en post-->
-        <div class="col">
-            <section class="card shadow">
-                <img class="card-img-top" src="img/pexels-bidvine-1249611.jpg" alt="" />
-                <div class="card-body">
-                    <b class="text-muted d-block mb-4">22 MAR 2021</b>
-                    <h2 class="mb-1">Home improvement for everyone</h2>
-                    <h4 class="text-muted mb-4">Fix it like pro</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-                    <p class="text-muted d-flex align-items-center">
-                        <span class="material-icons">person</span>
-                        Written by Handy John
-                    </p>
-
-                    <footer>
-                        <span class="badge bg-primary">#work</span>
-                        <span class="badge bg-primary">#handy</span>
-                        <span class="badge bg-primary">#improvement</span>
-                    </footer>
-                </div>
-            </section>
-        </div>
-        <!-- 2. colonne for en post-->
-        <div class="col">
-            <section class="card shadow">
-                <img class="card-img-top" src="img/pexels-engin-akyurt-1435907.jpg" alt="" />
-                <div class="card-body">
-                    <b class="text-muted d-block mb-4">20 MAR 2021</b>
-                    <h2 class="mb-1">Easy Tasty Pizza in the oven</h2>
-                    <h4 class="text-muted mb-4">Crispy base, cheesy top</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-                    <p class="text-muted d-flex align-items-center">
-                        <span class="material-icons">person</span>
-                        Written by Don John
-                    </p>
-
-                    <footer>
-                        <span class="badge bg-primary">#cooking</span>
-                        <span class="badge bg-primary">#food</span>
-                        <span class="badge bg-primary">#pizza</span>
-                    </footer>
-                </div>
-            </section>
-        </div>
-        <!-- 3. colonne for en post-->
-        <div class="col">
-        <section class="card shadow">
-            <img class="card-img-top" src="img/pexels-ivan-samkov-5799100.jpg" alt="" />
-            <div class="card-body">
-                <b class="text-muted d-block mb-4">26 MAR 2021</b>
-                <h2 class="mb-1">Get the perfect coat for your new place</h2>
-                <h4 class="text-muted mb-4">Mixing paint colours</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-                <p class="text-muted d-flex align-items-center">
-                    <span class="material-icons">person</span>
-                    Written by Handy John
-                </p>
-
-                <footer>
-                    <span class="badge bg-primary">#travel</span>
-                    <span class="badge bg-primary">#holiday</span>
-                    <span class="badge bg-primary">#nature</span>
-                </footer>
+        <!--Hovedoppslag -->
+        <div class="row mb-4">
+            <div class="col-8">
+                <!-- Bildet til hovedoppslaget -->
+                <img id="img_top_post" src="" class="img-fluid rounded-3 shadow" />
             </div>
-        </section>
+            <div class="col-4">
+                <!-- Tekst til hovedoppslaget -->
+                <section id="section_top_post" class="p-4">
+                </section>
+            </div>
     </div>
-</div>
- <!-- Til hit -->
 
+    <!-- Poster -->
+    <div id="div_posts" class="posts">
     </div>
+
+
     <footer class="bg-dark p-5 mt-4 text-light">
         <div class="container">
             <h4>Velkommen til min testside for opplæring i Blog</h4>

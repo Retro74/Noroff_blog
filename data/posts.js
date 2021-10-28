@@ -6,7 +6,7 @@ export const SAMPLE_POSTS = [
         intro: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Et porro minus laudantium magnam molestias nam nostrum excepturi?',
         tags: ['travel', 'holiday', 'nature'],
         photo: 'img/pexels-joyston-judah-933054.jpg',
-        author: 'Outdoors John',
+        author: 'Indoors John',
         date: '20 MAR 2021'
     },
     {
@@ -94,7 +94,7 @@ export const SAMPLE_POSTS = [
         title: 'Get the perfect coat for your new place',
         subTitle: 'Mixing paint colours',
         intro: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-        tags: ['work', 'handy', 'paint'],
+        tags: ['work', 'handy', 'paint', 'creative'],
         photo: 'img/pexels-ivan-samkov-5799100.jpg',
         author: 'Handy John',
         date: '29 MAR 2021'

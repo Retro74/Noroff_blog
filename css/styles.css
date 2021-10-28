@@ -4,3 +4,11 @@ body{
 h1, h2,h3,h4 {
     font-weight: 700;
 }
+.posts {
+    display: grid;
+    grid-gap: 1.5rem;
+    /* Fyll ut så mye som mulig på 320px, maks en del  pr enhet*/
+    grid-template-columns: repeat(auto-fill, minmax(320px,1fr));
+    
+
+}
