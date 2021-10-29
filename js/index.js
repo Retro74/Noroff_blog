@@ -14,6 +14,7 @@ const [ topPostObject, ...postsObjects ] = SAMPLE_POSTS  //Destructure
 function createTopPost(topPostObject){
     //Setter bildet til hovedoppslaget
     img_top_post.src=topPostObject.photo
+    img_top_post.alt=topPostObject.alt
 
     //Setter teksten til hovedoppslaget
     section_top_post.innerHTML=`
@@ -35,10 +36,10 @@ function createTopPost(topPostObject){
 
 function createPosts(postObject){
     return `
-    <section class="card shadow">
-        <img class="card-img-top" src="${postObject.photo}" alt="" />
-        <div class="card-body">
-            <b class="text-muted d-block mb-4">${postObject.date}</b>
+    <section class="card shadow"  >
+        <img class="card-img-top" src="${postObject.photo}" alt="${postObject.alt}" />
+        <div class="card-body" >
+            <span class="text-muted d-block mb-4 fw-bold">${postObject.date}</span>
             <h2 class="mb-1">${postObject.title}</h2>
             <h4 class="text-muted mb-4">${postObject.subTitle}</h4>
             <p>${postObject.intro}</p>
@@ -57,14 +58,16 @@ function createPosts(postObject){
 }
 
 function createTags(tags){
-    return tags
-        .map(tag => `<span class="badge bg-primary">#${tag}</span>`)
-        .join(' ')
+    let retrunstring =''
+    for (let tag of tags){
+        retrunstring +=`<span  class="badge bg-primary">#${tag}</span> `}
+    return retrunstring
 }
 
+
+//Insert elements / Run code
 createTopPost(topPostObject)
 
 for (const postObjcect of postsObjects){
     div_posts.innerHTML += createPosts(postObjcect);
 }
-console.log(topPostObject)
